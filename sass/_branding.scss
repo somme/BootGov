@@ -1,0 +1,69 @@
+//
+// Branding
+// --------------------------------------------------
+
+html{
+  background-color: #dee0e2;
+}
+
+.top-bar {
+	background-color: $brand-primary;
+	height: 10px;
+	//margin-top: 102px;
+}
+.top-bar-footer {
+	background-color: $brand-primary;
+	height: 10px;
+	margin-top: 60px;
+}
+.sitename{
+	margin-top: 0 !important;
+}
+
+.sitename a{
+	font-weight: 400;
+	font-size: 26px;
+	font-size: 2.6rem;
+	color: #fff !important;
+	margin-left: 30px;
+}
+.logo{
+	margin-top: 10px;
+}
+
+@media (min-width: $screen-sm){
+
+	.sitename a{
+		margin-left: 30px;
+	}
+	.bs-navbar-collapse.in .nav{
+		margin-left: 30px !important;
+	}
+}
+
+@media (max-width: $screen-xs-max){
+	.logo{
+		margin-left: 20px;
+	}
+	.sitename a{
+		font-size: 18px;
+		font-size: 1.8rem;
+		margin-left: 4px;
+	}
+}
+// IE hacks
+.ie8{
+	.sitename{
+		display: inline-block;
+		margin: -5px 0 0 20px !important;
+	}
+}
+.ie7{
+	.sitename{
+		display: inline-block;
+		margin: 16px 0 0 20px !important;
+	}
+	.top-bar {
+		margin-top: 108px;
+	}
+}
