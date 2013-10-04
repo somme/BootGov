@@ -1,6 +1,6 @@
 BootGov
 -------------------
-A Boostrap 3 theme using the [design principles](https://www.GOV.UK/designprinciples) and [style guide](https://www.GOV.UK/designprinciples/styleguide) from [GOV.UK](https://www.GOV.UK/) (alphagov).
+A [Boostrap 3](http://getbootstrap.com/) theme using the [design principles](https://www.gov.uk/service-manual) and [style guide](https://www.gov.uk/service-manual/designers) from [GOV.UK](https://www.GOV.UK/).
 
 Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development, created and maintained by [Somme Sakounthong](http://twitter.com/sommeuel)
 
