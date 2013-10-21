@@ -8,7 +8,7 @@ NOTE: This theme was developed and provided free of charge. Feel free to contrib
 
 -----------
 
-## CHange log
+## Change log
 
  * v.0.2 - Added responsive form with validation example
  * v.0.1 - Initial commmit
