@@ -254,18 +254,6 @@ var box_message = '<span class="message-text"><h2>There was a problem submitting
 					email_confirm : function() {
 
 						return $(this).val() == $('input#email').val();
-					},
-					day : function() {
-						return !BirthCheck();
-					},
-					month : function() {
-						return !BirthCheck();
-					},
-					year : function() {
-						return !BirthCheck();
-					},
-					birth : function() {
-						return !BirthCheck();
 					}
 			}
 	});
