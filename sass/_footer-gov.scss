@@ -83,6 +83,12 @@ footer .copyright {
 .ie7{
 	.gov-footer{
 		margin-bottom: -20px;
+
+		.row{
+			.col-sm-3{
+				width:240px;
+			}
+		}
 	}
 	.footer-menu ul li{
 		float: left;

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="ie7 no-js"><![endif]-->
+<!--[if IE 8]> <html class="ie8 no-js"><![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"><![endif]-->
+<html lang="en">
+  <head>
+    <title>BootGov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../dist/css/bootstrap.css" media="screen">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../../dist/css/glyphicons-ie7.css" media="screen">
+    <![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+  <a class="sr-only" href="#content">Skip navigation</a>
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+              <a href="/" title="Go to the gov.uk homepage" class="content">
+              <img src="../../dist/img/home-office-logo.png" alt="Home office logo" class="logo" width="180" height="41" style="margin-bottom: 10px">
+            </a>
+
+        <a class="menu-btn" data-toggle="collapse" data-target="#navbar-main">Menu<span class="glyphicon glyphicon-chevron-down"></span></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="top-bar"></div>
+    </div>
+
+    <div class="container">
+         <div class="clearfix">&nbsp;</div>
+          <div class="row">
+            <div class="col-lg-12">
+     
+     <h1>Responsive form with validation</h1>
+    <p>*Required field</p>
+
+<form class="lo1form" id="lo1form" action="" method="post">
+
+                  <div id="error-box"></div>
+
+                  <fieldset id="Personal_Details">
+                      <legend><h2>Your personal details</h2></legend>
+                            <div class="row col-sm-6">
+                      
+                        <div class="form-group" id="title">
+                            <label for="title">Title *</label>
+                              <div class="form-inline">    
+                                <select class="form-control small" name="title" id="title" data-conditional="title" data-required="true" data-describedby="title-description" data-description="title" >
+                                  <option value="">Please select</option>
+                                   <option value="Mr">Mr</option>
+                                   <option value="Mrs">Mrs</option>
+                                   <option value="Miss">Miss</option>
+                                   <option value="Ms">Ms</option>
+                                   <option value="Dr">Dr</option>
+                                   <option value="Other">Other</option>
+                                   <option value="None">None</option>
+                                </select>        
+                                <span class="form-desc" id="title-description"></span>                     
+                            </div>  
+                        </div> 
+
+                     <div class="form-group hidden" id="title_other">
+                      <label for="title_other">Please state "Other" *</label>
+                      <input type="text" class="form-control" id="title_other" name="title_other" placeholder="Start typing" data-describedby="title_other-description" data-description="title_other"  data-pattern="[a-zA-Z ]+" maxlength="30">
+                      <span class="form-desc" id="title_other-description"></span>
+                    </div> 
+
+                    <div class="form-group" id="your_surname">
+                      <label for="your_surname">Surname *</label>
+                      <input type="text" class="form-control" id="your_surname" name="your_surname" data-required="true" data-describedby="your_surname-description" data-description="your_surname"  data-pattern="^[a-zA-Z]+(([\’\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$" maxlength="30">
+                      <span class="form-desc" id="your_surname-description"></span>
+                    </div>
+
+
+                    <div class="form-group" id="your_forname">
+                      <label for="your_forname">Forname(s) *</label>
+                      <input type="text" class="form-control" id="your_forname" name="your_forname" data-required="true" data-describedby="your_forname-description" data-description="your_forname"  data-pattern="^[a-zA-Z]+(([\’\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$" maxlength="30">
+                      <span class="form-desc" id="your_forname-description"></span>
+                    </div>
+
+
+                    </div>
+                </fieldset>   
+
+
+                 <fieldset id="Contact_Details">
+                      <legend><h2>Your contact details</h2></legend>
+                       <div class="form-group">
+                      <p>We may need to contact you to confirm the details on the form.</p>
+                      </div>
+                            <div class="row col-sm-6">
+                      
+                      <div class="form-group" id="telephone">
+                        <label for="telephone">Telephone number *</label>
+                        <input type="text" class="form-control" id="telephone" name="telephone" data-required="true" data-describedby="telephone-description" data-description="telephone" data-pattern="^\s*\(?(020[78]?\)? ?[1-9][0-9]{2,3} ?[0-9]{4})|(0[1-8][0-9]{3}\)? ?[1-9][0-9]{2} ?[0-9]{3})\s*$" maxlength="30">
+                        <span class="form-desc" id="telephone-description"></span>
+                      </div>
+
+                      <div class="form-group" id="alt_telephone">
+                        <label for="alt_telephone">Alternative telephone number</label>
+                        <input type="text" class="form-control" id="alt_telephone" name="alt_telephone" data-describedby="alt_telephone-description" data-description="alt_telephone" data-pattern="^\s*\(?(020[78]?\)? ?[1-9][0-9]{2,3} ?[0-9]{4})|(0[1-8][0-9]{3}\)? ?[1-9][0-9]{2} ?[0-9]{3})\s*$" maxlength="30">
+                        <span class="form-desc" id="alt_telephone-description"></span>
+                      </div>
+
+                      <div class="form-group" id="email">
+                        <label for="email">Email address *</label>
+                        <input type="text" class="form-control disablecopypaste" id="email" name="email" data-required="true" data-describedby="email-description" data-description="email" data-pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$" maxlength="30">
+                        <span class="form-desc" id="email-description"></span>
+
+                      </div>
+
+                      <div class="form-group" id="email_confirm">
+                        <label for="email_confirm">Confirm email address *</label>
+                        <input type="text" class="form-control disablecopypaste" id="email_confirm" name="email_confirm" data-required="true" data-describedby="email_confirm-description" data-description="email_confirm" data-conditional="email_confirm" data-pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$" maxlength="30">
+                         <span class="form-desc" id="email_confirm-description"></span>
+                      </div>
+
+                    </div>
+                </fieldset> 
+
+                                <fieldset id="Address_Details">
+                      <legend><h2>Your address</h2></legend>
+                            <div class="row col-sm-6">
+
+
+                          <div class="form-group" id="address1">
+                            <label for="address1">Address line 1*</label>
+                              <input type="text" class="form-control" name="address1" data-required="true" id="address1" data-describedby="address1-description" data-description="address1" data-pattern="[a-zA-Z ]+" maxlength="30"/>
+                            <span class="form-desc" id="address1-description"></span>
+                          </div>
+                         
+                          <div class="form-group" id="address2">
+                            <label for="address2">Address line 2</label>
+                              <input type="text" class="form-control" name="address2" id="address2" data-describedby="address2-description" data-description="address2" data-pattern="[a-zA-Z ]+" maxlength="30"/>
+                            <span class="form-desc" id="address2-description"></span>
+                          </div>
+        
+                          <div class="form-group" id="town">
+                            <label for="town">Town/city *</label>
+                            <input type="text" class="form-control" name="town" id="town" data-required="true" data-describedby="town-description" data-description="town" data-pattern="[a-zA-Z ]+" maxlength="30" />
+                          <span class="form-desc" id="town-description"></span>
+                          </div>
+      
+                          <div class="form-group" id="county">
+                            <label for="county">County</label>
+                            <input type="text" class="form-control" name="county" id="county"  data-describedby="county-description" data-description="county" data-pattern="[a-zA-Z ]+" maxlength="30" />
+                          <span class="form-desc" id="county-description"></span>
+                          </div>
+                      
+                          <div class="form-group" id="postcode">
+                                <label for="postcode">Your postcode *</label>
+                            <input type="text" class="form-control small" name="postcode" id="postcode" data-required="true" data-describedby="postcode-description" data-description="postcode" data-pattern="^(((([A-PR-UWYZ][0-9][0-9A-HJKS-UW]?)|([A-PR-UWYZ][A-HK-Y][0-9][0-9ABEHMNPRV-Y]?))\s{0,2}[0-9]([ABD-HJLNP-UW-Z]{2}))|(GIR\s{0,2}0AA))$" maxlength="9" />                  
+                            <span class="form-desc" id="postcode-description"></span>
+                          </div>
+                      
+
+                  </div>                    
+                </fieldset> 
+ 
+
+                  
+                        
+
+                  <fieldset>
+ 
+                    <div class="form-group">
+                      <input type="submit" value="Submit" class="btn btn-primary btn-lg"></input>
+                    </div>  
+                  </div>   
+
+          </fieldset>
+        
+
+                </form> 
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+<!-- footer -->
+<div class="top-bar-footer"></div>
+<div class="gov-footer">
+   <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="footer-menu">
+                  <ul>
+                     <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Feedback</a></li>
+                  </ul>
+          </div>
+          </div>
+        </div>
+         <div class="row">
+              <div class="col-sm-12">
+               <ul class="view-options">
+                  <li><a href="#" id="view-options"><span id="view-full">View full site</span></a></li>
+                </ul>
+              <hr />
+              </div>
+         </div>
+          <div class="row">
+                   <div class="col-sm-9">
+                      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated.</p>
+                      <p>© Office for Security and Counter Terrorism</p>
+                  </div>
+                    <div class="col-sm-3">
+                      <div class="copyright-div">
+                      <div class="copyright">
+                      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+                      </div>
+                    </div>
+                    </div>
+          </div>
+  </div>
+</div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../dist/js/bootstrap.js"></script>
+<script src="../../assets/js/custom.js"></script>
+<script src="../../assets/js/modernizr-2.5.2.min.js"></script>
+<script src="../../assets/js/toggle.viewport.js"></script>
+<script src="../../assets/js/jquery.placeholder.js"></script>
+<script src="../../assets/js/jquery-validate.min.js"></script>
+<script src="../../assets/js/validation.js"></script>
+
+<!-- <script src="http://platform.twitter.com/widgets.js"></script> -->
+<script src="../../assets/js/holder.js"></script>
+<script src="../../assets/js/application.js"></script>
+</html>

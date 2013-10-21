@@ -9,26 +9,31 @@
 
 fieldset {
   padding: 0;
-  margin: 0;
+  margin: 0 0 2em 0;
   border: 0;
 }
 
 legend {
   display: block;
   width: 100%;
-  padding: 0;
-  margin-bottom: $line-height-computed;
+  padding: 0 0 20px;
+  margin-bottom: 0;
   font-size: ($font-size-base * 1.5);
   line-height: inherit;
   color: $legend-color;
   border: 0;
-  border-bottom: 1px solid $legend-border-color;
+}
+legend h2{
+  border-top: 1px solid $legend-border-color;
+  display: block;
+  padding-top: 20px;
+  margin-bottom:20px;
 }
 
 label {
   display: inline-block;
   margin-bottom: 5px;
-  font-weight: normal;
+  font-weight: 100;
   font-size: 19px;
   font-size: 1.9rem;
 }
@@ -125,11 +130,33 @@ output {
 // input[type="tel"]
 // input[type="color"]
 
+select.form-control{
+  font-size: 16px;
+}
+.ie8 input.form-control{
+  height: auto;
+  padding-top: 0;
+}
+.ie7 .form-control{
+  height: auto;
+  padding-top: 0;
+}
+.ie8 .form-inline .form-group,
+.ie8 .form-inline select,
+.ie7 .form-inline .form-group,
+.ie7 .form-inline select{
+  width: auto;
+  display:inline;
+}
+.ie7 .form-inline select{
+  margin-right: 10px;
+}
 .form-control {
   display: block;
   width: 100%;
   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: $padding-base-vertical $padding-base-horizontal;
+  //padding: $padding-base-vertical $padding-base-horizontal;
+    padding: 8px 6px 6px 6px;
   font-size: ($font-size-base*1.35714286);
   font-weight: 100;
   line-height: $line-height-base;
@@ -157,6 +184,7 @@ output {
     cursor: not-allowed;
     background-color: $input-bg-disabled;
   }
+ 
 }
 
 // Reset height for `textarea`s
@@ -171,7 +199,20 @@ textarea.form-control {
 // horizontal forms, use the predefined grid classes.
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+    .form-group {
+      margin-bottom: 15px;
+      }
+
+      ul{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 100;
+        font-size: 19px;
+        font-size: 1.9rem;
+        list-style-type:circle;
+      }
 }
 
 
@@ -190,7 +231,7 @@ textarea.form-control {
   label {
     display: inline;
     margin-bottom: 0;
-    font-weight: normal;
+    font-weight: 100;
     cursor: pointer;
   }
 }
@@ -213,7 +254,7 @@ textarea.form-control {
   padding-left: 20px;
   margin-bottom: 0;
   vertical-align: middle;
-  font-weight: normal;
+  font-weight: 100;
   cursor: pointer;
 }
 .radio-inline + .radio-inline,
@@ -361,3 +402,9 @@ input[type="checkbox"],
     }
   }
 }
+
+ @media (min-width: $screen-sm) {
+  .small{
+    width: 140px;
+  }
+  }

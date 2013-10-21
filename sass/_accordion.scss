@@ -1,0 +1,59 @@
+//
+// Accordion
+// --------------------------------------------------
+
+#moreinfo-panel{
+  margin-top: -55px;
+  margin-bottom: 50px;
+}
+#moreinfo-title{
+  cursor: pointer;
+  cursor: hand;
+  background-color: #eaeaf3;
+  display: inline-block;
+  margin: 0;
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+  padding: 6px 8px;
+  font-weight: 100;
+  color: $brand-primary;
+  
+  .glyphicon{
+    font-size: 12px;
+    margin-left: 5px;
+  }
+&:hover{
+  text-decoration: none;
+  }
+}
+
+#moreinfo-body{
+  background-color: #eaeaf3;
+  padding: 20px;
+  p, ul li{
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+  list-style-type:circle;
+  }
+}
+.ie7{
+  h4#moreinfo-title{
+    display:inline;
+  }
+  #moreinfo-title{
+    text-decoration: none;
+     .glyphicon{
+        display:inline-block;
+        margin-left: 0;
+        padding-left: 5px;
+        text-decoration: none;
+     }
+
+  }
+}

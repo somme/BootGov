@@ -19,12 +19,14 @@ $almost-white:           #f7f7f7 !default;
 // Brand colors
 // -------------------------
 
-$brand-primary:         #005ea5 !default;
+//$brand-primary:         #005ea5 !default;
+$brand-primary:			#9325b2 !default; //HO PURPLE	
 $brand-secondary:       #dee0e2 !default;
-$brand-success:         #5cb85c !default;
-$brand-warning:         #b10e1e !default;
-$brand-danger:          #d9534f !default;
+$brand-success:         #2cc52c !default;
+$brand-warning:         #df3034 !default;
+$brand-danger:          #df3034 !default;
 $brand-info:            #5bc0de !default;
+$ho-button:				#006435 !default;
 
 // Scaffolding
 // -------------------------
@@ -130,7 +132,7 @@ $btn-default-border:             #ccc !default;
 $btn-default-shadow:             0 2px 0 darken($btn-default-bg, 15%) !default;
 
 $btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-bg:                 $ho-button !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 $btn-primary-shadow:			 0 2px 0 darken($btn-primary-bg, 15%) !default;
 
@@ -397,7 +399,7 @@ $state-warning-bg:               #fcf8e3 !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 3%) !default;
 
 $state-danger-text:              #b94a48 !default;
-$state-danger-bg:                #f2dede !default;
+$state-danger-bg:                #fef7f7 !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 3%) !default;
 
 $state-success-text:             #468847 !default;
