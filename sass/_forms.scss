@@ -9,7 +9,7 @@
 
 fieldset {
   padding: 0;
-  margin: 0 0 2em 0;
+  margin: 0 ;
   border: 0;
 }
 
@@ -26,7 +26,7 @@ legend {
 legend h2{
   border-top: 1px solid $legend-border-color;
   display: block;
-  padding-top: 20px;
+  padding-top: 30px;
   margin-bottom:20px;
 }
 
@@ -133,14 +133,14 @@ output {
 select.form-control{
   font-size: 16px;
 }
-.ie8 input.form-control{
-  height: auto;
-  padding-top: 0;
-}
+.ie9 input.form-control,
+.ie8 input.form-control,
 .ie7 .form-control{
   height: auto;
   padding-top: 0;
 }
+.ie9 .form-inline .form-group,
+.ie9 .form-inline select,
 .ie8 .form-inline .form-group,
 .ie8 .form-inline select,
 .ie7 .form-inline .form-group,
@@ -202,6 +202,7 @@ textarea.form-control {
   margin-bottom: 40px;
     .form-group {
       margin-bottom: 15px;
+      display: inline-block;
       }
 
       ul{
@@ -213,8 +214,21 @@ textarea.form-control {
         font-size: 1.9rem;
         list-style-type:circle;
       }
-}
+      .form-group.radio-group{
+        display: block;
+      }
 
+}
+.form-group.radio-group label{
+        display: block ;
+      }
+
+.form-group.radio-group label.radio-inline{
+  display: inline-block !important;
+}
+.form-group.last{
+    margin-bottom: 10px;
+}
 
 // Checkboxes and radios
 //
@@ -319,7 +333,7 @@ input[type="checkbox"],
 
 .help-block {
   display: block; // account for any element using help-block
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
   color: lighten($text-color, 25%); // lighten the text some for contrast
 }
@@ -343,14 +357,14 @@ input[type="checkbox"],
   @media (min-width: $screen-sm) {
     // Inline-block all the things for "inline"
     .form-group  {
-      display: inline-block;
-      margin-bottom: 0;
+      //display: inline-block;
       vertical-align: middle;
     }
 
     // In navbar-form, allow folks to *not* use `.form-group`
     .form-control {
       display: inline-block;
+
     }
 
     // Remove default margin on radios/checkboxes that were used for stacking, and
@@ -368,6 +382,9 @@ input[type="checkbox"],
       float: none;
       margin-left: 0;
     }
+  }
+     .form-group  {
+    margin-bottom: 0;
   }
 }
 
@@ -405,6 +422,43 @@ input[type="checkbox"],
 
  @media (min-width: $screen-sm) {
   .small{
-    width: 140px;
+    width: 160px;
   }
   }
+
+.required-star{
+  display: inline-block;
+  color: red;
+}
+.form-group ul.declaration-bullets {
+  margin-top: -10px !important;
+  margin-left: -24px;
+}
+.declaration-bg{
+  background-color: #eaeaf3;
+  padding: 2px 20px 20px; 
+  legend h2{
+    padding-top: 0;
+  }
+}
+
+fieldset#declaration legend h2,
+fieldset#data_pretection legend h2{
+  border: none !important;
+  padding-top: 0px;
+}
+fieldset#declaration,
+fieldset#data_pretection{
+  margin-top: 20px;
+}
+.margin0{
+  margin-bottom: 0;
+  display:inline-block;
+}
+.margin-20{
+  margin-bottom:-20px;
+}
+.form-divider{
+  border-top: 1px solid #e5e5e5;
+  margin: 30px 0 20px 0;
+}

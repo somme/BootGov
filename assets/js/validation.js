@@ -50,7 +50,7 @@ var box_message = '<span class="message-text"><h2>There was a problem submitting
 		invalid : function() {
 			
 			//scroll to top
-			$('html, body').animate({ scrollTop: $("#error-box").offset().top}, 600);
+			$('html, body').animate({ scrollTop: $("#error-box").offset().top+(-61)}, 600);
 			
 			//find error elements and display as list
 			var arr = [];
@@ -77,7 +77,7 @@ var box_message = '<span class="message-text"><h2>There was a problem submitting
 			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			      if (target.length) {
 			        $('html,body').animate({
-			          scrollTop: target.offset().top
+			          scrollTop: target.offset().top+(-67)
 			        }, 600);
 			        return false;
 			      }

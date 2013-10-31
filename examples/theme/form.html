@@ -18,19 +18,21 @@
   <script src="../../assets/js/respond.min.js"></script>
 <![endif]-->
 
+<style>
+.top-bar{
+  margin-top: 61px;
+}
+</style>
   </head>
   <body>
   <a class="sr-only" href="#content">Skip navigation</a>
-    <div class="navbar navbar-inverse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
               <a href="/" title="Go to the gov.uk homepage" class="content">
               <img src="../../dist/img/home-office-logo.png" alt="Home office logo" class="logo" width="180" height="41" style="margin-bottom: 10px">
             </a>
-
-        <a class="menu-btn" data-toggle="collapse" data-target="#navbar-main">Menu<span class="glyphicon glyphicon-chevron-down"></span></a>
         </div>
-
       </div>
     </div>
 
@@ -41,21 +43,34 @@
     <div class="container">
          <div class="clearfix">&nbsp;</div>
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-9 margin-20">
      
      <h1>Responsive form with inline validation</h1>
-    <p>*Required field</p>
+    <p><span class="required-star">*</span> Required field</p>
+
+         </div>
+        </div>
+          <div class="row">  
+            <div class="col-md-9">
+              <div id="error-box"></div>
+            </div>
+          </div>
+          
+          <div class="row">  
+            <div class="col-sm-12">
 
 <form class="lo1form" id="lo1form" action="" method="post">
 
-                  <div id="error-box"></div>
+              
 
                   <fieldset id="Personal_Details">
+                    <div class="row col-md-9">
                       <legend><h2>Your personal details</h2></legend>
+                    </div>
                             <div class="row col-sm-6">
                       
                         <div class="form-group" id="title">
-                            <label for="title">Title *</label>
+                            <label for="title">Title <span class="required-star">*</span></label>
                               <div class="form-inline">    
                                 <select class="form-control small" name="title" id="title" data-conditional="title" data-required="true" data-describedby="title-description" data-description="title" >
                                   <option value="">Please select</option>
@@ -72,20 +87,20 @@
                         </div> 
 
                      <div class="form-group hidden" id="title_other">
-                      <label for="title_other">Please state "Other" *</label>
+                      <label for="title_other">Please state "Other" <span class="required-star">*</span></label>
                       <input type="text" class="form-control" id="title_other" name="title_other" placeholder="Start typing" data-describedby="title_other-description" data-description="title_other"  data-pattern="[a-zA-Z ]+" maxlength="30">
                       <span class="form-desc" id="title_other-description"></span>
                     </div> 
 
                     <div class="form-group" id="your_surname">
-                      <label for="your_surname">Surname *</label>
+                      <label for="your_surname">Surname <span class="required-star">*</span></label>
                       <input type="text" class="form-control" id="your_surname" name="your_surname" data-required="true" data-describedby="your_surname-description" data-description="your_surname"  data-pattern="^[a-zA-Z]+(([\’\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$" maxlength="30">
                       <span class="form-desc" id="your_surname-description"></span>
                     </div>
 
 
                     <div class="form-group" id="your_forname">
-                      <label for="your_forname">Forname(s) *</label>
+                      <label for="your_forname">Forname(s) <span class="required-star">*</span></label>
                       <input type="text" class="form-control" id="your_forname" name="your_forname" data-required="true" data-describedby="your_forname-description" data-description="your_forname"  data-pattern="^[a-zA-Z]+(([\’\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$" maxlength="30">
                       <span class="form-desc" id="your_forname-description"></span>
                     </div>
@@ -96,14 +111,14 @@
 
 
                  <fieldset id="Contact_Details">
+                  <div class="row col-md-9">
                       <legend><h2>Your contact details</h2></legend>
-                       <div class="form-group">
-                      <p>We may need to contact you to confirm the details on the form.</p>
-                      </div>
+                      <p>We will contact you by telephone to verify the information you have included on this form.</p>
+                  </div>
                             <div class="row col-sm-6">
                       
                       <div class="form-group" id="telephone">
-                        <label for="telephone">Telephone number *</label>
+                        <label for="telephone">Telephone number <span class="required-star">*</span></label>
                         <input type="text" class="form-control" id="telephone" name="telephone" data-required="true" data-describedby="telephone-description" data-description="telephone" data-pattern="^\s*\(?(020[78]?\)? ?[1-9][0-9]{2,3} ?[0-9]{4})|(0[1-8][0-9]{3}\)? ?[1-9][0-9]{2} ?[0-9]{3})\s*$" maxlength="30">
                         <span class="form-desc" id="telephone-description"></span>
                       </div>
@@ -115,14 +130,14 @@
                       </div>
 
                       <div class="form-group" id="email">
-                        <label for="email">Email address *</label>
+                        <label for="email">Email address <span class="required-star">*</span></label>
                         <input type="text" class="form-control disablecopypaste" id="email" name="email" data-required="true" data-describedby="email-description" data-description="email" data-pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$" maxlength="30">
                         <span class="form-desc" id="email-description"></span>
 
                       </div>
 
                       <div class="form-group" id="email_confirm">
-                        <label for="email_confirm">Confirm email address *</label>
+                        <label for="email_confirm">Confirm email address <span class="required-star">*</span></label>
                         <input type="text" class="form-control disablecopypaste" id="email_confirm" name="email_confirm" data-required="true" data-describedby="email_confirm-description" data-description="email_confirm" data-conditional="email_confirm" data-pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$" maxlength="30">
                          <span class="form-desc" id="email_confirm-description"></span>
                       </div>
@@ -130,13 +145,15 @@
                     </div>
                 </fieldset> 
 
-                                <fieldset id="Address_Details">
+                        <fieldset id="Address_Details">
+                      <div class="row col-md-9">
                       <legend><h2>Your address</h2></legend>
+                    </div>
                             <div class="row col-sm-6">
 
 
                           <div class="form-group" id="address1">
-                            <label for="address1">Address line 1*</label>
+                            <label for="address1">Address line 1 <span class="required-star">*</span></label>
                               <input type="text" class="form-control" name="address1" data-required="true" id="address1" data-describedby="address1-description" data-description="address1" data-pattern="[a-zA-Z ]+" maxlength="30"/>
                             <span class="form-desc" id="address1-description"></span>
                           </div>
@@ -148,7 +165,7 @@
                           </div>
         
                           <div class="form-group" id="town">
-                            <label for="town">Town/city *</label>
+                            <label for="town">Town/city <span class="required-star">*</span></label>
                             <input type="text" class="form-control" name="town" id="town" data-required="true" data-describedby="town-description" data-description="town" data-pattern="[a-zA-Z ]+" maxlength="30" />
                           <span class="form-desc" id="town-description"></span>
                           </div>
@@ -160,7 +177,7 @@
                           </div>
                       
                           <div class="form-group" id="postcode">
-                                <label for="postcode">Your postcode *</label>
+                                <label for="postcode">Your postcode <span class="required-star">*</span></label>
                             <input type="text" class="form-control small" name="postcode" id="postcode" data-required="true" data-describedby="postcode-description" data-description="postcode" data-pattern="^(((([A-PR-UWYZ][0-9][0-9A-HJKS-UW]?)|([A-PR-UWYZ][A-HK-Y][0-9][0-9ABEHMNPRV-Y]?))\s{0,2}[0-9]([ABD-HJLNP-UW-Z]{2}))|(GIR\s{0,2}0AA))$" maxlength="9" />                  
                             <span class="form-desc" id="postcode-description"></span>
                           </div>

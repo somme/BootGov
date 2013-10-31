@@ -323,7 +323,8 @@ body {
   background-color: white;
   src: url(https://assets.digital.cabinet-office.gov.uk/static/NTA-Light-20130221.eot#) format("embedded-opentype");
   font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 input,
@@ -336,17 +337,20 @@ textarea {
 }
 
 a {
-  color: #9325b2;
+  color: #2e3191;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #5f1873;
-  text-decoration: underline;
+  color: #2e8aca;
 }
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 img {
@@ -1709,7 +1713,7 @@ table th[class*="col-"] {
 }
 fieldset {
   padding: 0;
-  margin: 0 0 2em 0;
+  margin: 0;
   border: 0;
 }
 
@@ -1727,7 +1731,7 @@ legend {
 legend h2 {
   border-top: 1px solid #e5e5e5;
   display: block;
-  padding-top: 20px;
+  padding-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -1806,17 +1810,18 @@ select.form-control {
   font-size: 16px;
 }
 
-.ie8 input.form-control {
-  height: auto;
-  padding-top: 0;
-}
-
+.ie9 input.form-control,
+.ie8 input.form-control,
 .ie7 .form-control {
   height: auto;
   padding-top: 0;
 }
 
-.ie8 .form-inline .form-group, .ie8 .navbar-form .form-group,
+.ie9 .form-inline .form-group, .ie9 .navbar-form .form-group,
+.ie9 .form-inline select,
+.ie9 .navbar-form select,
+.ie8 .form-inline .form-group,
+.ie8 .navbar-form .form-group,
 .ie8 .form-inline select,
 .ie8 .navbar-form select,
 .ie7 .form-inline .form-group,
@@ -1870,6 +1875,7 @@ textarea.form-control {
 }
 .form-group .form-group {
   margin-bottom: 15px;
+  display: inline-block;
 }
 .form-group ul {
   display: inline-block;
@@ -1879,6 +1885,21 @@ textarea.form-control {
   font-size: 19px;
   font-size: 1.9rem;
   list-style-type: circle;
+}
+.form-group .form-group.radio-group {
+  display: block;
+}
+
+.form-group.radio-group label {
+  display: block;
+}
+
+.form-group.radio-group label.radio-inline {
+  display: inline-block !important;
+}
+
+.form-group.last {
+  margin-bottom: 10px;
 }
 
 .radio,
@@ -2042,15 +2063,13 @@ textarea.input-lg {
 
 .help-block {
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
   color: #525252;
 }
 
 @media (min-width: 768px) {
   .form-inline .form-group, .navbar-form .form-group {
-    display: inline-block;
-    margin-bottom: 0;
     vertical-align: middle;
   }
   .form-inline .form-control, .navbar-form .form-control {
@@ -2070,6 +2089,9 @@ textarea.input-lg {
     float: none;
     margin-left: 0;
   }
+}
+.form-inline .form-group, .navbar-form .form-group {
+  margin-bottom: 0;
 }
 
 .form-horizontal .control-label,
@@ -2102,9 +2124,52 @@ textarea.input-lg {
 
 @media (min-width: 768px) {
   .small {
-    width: 140px;
+    width: 160px;
   }
 }
+.required-star {
+  display: inline-block;
+  color: red;
+}
+
+.form-group ul.declaration-bullets {
+  margin-top: -10px !important;
+  margin-left: -24px;
+}
+
+.declaration-bg {
+  background-color: #eaeaf3;
+  padding: 2px 20px 20px;
+}
+.declaration-bg legend h2 {
+  padding-top: 0;
+}
+
+fieldset#declaration legend h2,
+fieldset#data_pretection legend h2 {
+  border: none !important;
+  padding-top: 0px;
+}
+
+fieldset#declaration,
+fieldset#data_pretection {
+  margin-top: 20px;
+}
+
+.margin0 {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.margin-20 {
+  margin-bottom: -20px;
+}
+
+.form-divider {
+  border-top: 1px solid #e5e5e5;
+  margin: 30px 0 20px 0;
+}
+
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -2297,7 +2362,7 @@ textarea.input-lg {
 }
 
 .btn-link {
-  color: #9325b2;
+  color: #2e3191;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -2311,7 +2376,7 @@ textarea.input-lg {
   border-color: transparent;
 }
 .btn-link:hover, .btn-link:focus {
-  color: #5f1873;
+  color: #2e8aca;
   text-decoration: underline;
   background-color: transparent;
   top: 0;
@@ -2908,9 +2973,11 @@ form .has-error {
   border-left: solid 3px #df3034;
   margin-left: -15px;
   margin-right: -15px;
+  display: block;
 }
 
-form .select-group .has-error {
+form .select-group .has-error,
+form .input-group .has-error {
   background-color: none;
   padding: 0;
   border-left: 0;
@@ -2919,7 +2986,8 @@ form .select-group .has-error {
 }
 
 .form-group.select-group span.success,
-.form-group.radio-group span.success {
+.form-group.radio-group span.success,
+.form-group.input-group span.success {
   margin-top: 0px !important;
 }
 
@@ -2947,9 +3015,14 @@ form .select-group .has-error {
   color: #df3034;
 }
 
+.has-error#declaration .declaration-bg,
+.has-error#data_pretection .declaration-bg {
+  background: none;
+}
+
 #moreinfo-panel {
-  margin-top: -55px;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 #moreinfo-title {
@@ -3024,7 +3097,8 @@ form .select-group .has-error {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  position: relative !important;
+  position: absolute !important;
+  width: 100%;
 }
 
 .tt-suggestion {
@@ -4458,7 +4532,7 @@ form .select-group .has-error {
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #9325b2;
+  border-color: #2e3191;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4585,13 +4659,13 @@ form .select-group .has-error {
 }
 
 .nav .caret {
-  border-top-color: #9325b2;
-  border-bottom-color: #9325b2;
+  border-top-color: #2e3191;
+  border-bottom-color: #2e3191;
 }
 
 .nav a:hover .caret {
-  border-top-color: #5f1873;
-  border-bottom-color: #5f1873;
+  border-top-color: #2e8aca;
+  border-bottom-color: #2e8aca;
 }
 
 .nav-tabs .dropdown-menu {
@@ -5299,7 +5373,7 @@ a.badge:hover, a.badge:focus {
 
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #9325b2;
+  color: #2e3191;
   background-color: white;
 }
 
@@ -5352,7 +5426,7 @@ a.list-group-item.active > .badge,
 
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #9325b2;
+  border-color: #2e3191;
 }
 
 .thumbnail > img {

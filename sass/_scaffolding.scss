@@ -27,7 +27,8 @@ body {
   background-color: $body-bg;
   src: $nta-source;
   font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Reset fonts for relevant elements
@@ -50,7 +51,7 @@ a {
   &:hover,
   &:focus {
     color: $link-hover-color;
-    text-decoration: underline;
+    //text-decoration: underline;
   }
 
   &:focus {
@@ -58,6 +59,11 @@ a {
   }
 }
 
+p{
+  a{
+    text-decoration: underline;
+    }
+}
 
 // Images
 

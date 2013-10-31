@@ -65,8 +65,10 @@ form .has-error{
 	border-left: solid 3px $brand-danger;
 	margin-left: -15px;
 	margin-right: -15px;
+	display: block;
 }	
-form .select-group .has-error{
+form .select-group .has-error,
+form .input-group .has-error{
 	background-color: none;
 	padding: 0;
 	border-left: 0;
@@ -74,7 +76,8 @@ form .select-group .has-error{
 	margin-right: 0;
 }	
 .form-group.select-group span.success,
-.form-group.radio-group span.success{
+.form-group.radio-group span.success,
+.form-group.input-group span.success{
 	margin-top: 0px !important;
 }
 .error-box{
@@ -98,4 +101,8 @@ form .select-group .has-error{
 }
 .msg ol li a{
 	color: $brand-danger;
+}
+.has-error#declaration .declaration-bg,
+.has-error#data_pretection .declaration-bg{
+	 background: none;
 }

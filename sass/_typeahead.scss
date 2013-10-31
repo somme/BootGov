@@ -26,7 +26,9 @@
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
           background-clip: padding-box;
-          position: relative !important;
+          //position: relative !important;
+          position: absolute !important;
+          width: 100%;
 }
 
 .tt-suggestion {
