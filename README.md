@@ -1,4 +1,4 @@
-BootGov v.0.2
+BootGov v.0.3
 -------------------
 A [Boostrap 3](http://getbootstrap.com/) theme using the [design principles](https://www.gov.uk/service-manual) and [style guide](https://www.gov.uk/service-manual/designers) from [GOV.UK](https://www.GOV.UK/).
 
@@ -10,6 +10,7 @@ NOTE: This theme was developed and provided free of charge. Feel free to contrib
 
 ## Change log
 
+ * v.0.3 - Added example: Typeahead.js
  * v.0.2 - Added example: Responsive form with inline validation
  * v.0.1 - Initial commmit
 
