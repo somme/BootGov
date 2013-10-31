@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="ie7 no-js"><![endif]-->
+<!--[if IE 8]> <html class="ie8 no-js"><![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"><![endif]-->
+<html lang="en">
+  <head>
+    <title>BootGov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../dist/css/bootstrap.css" media="screen">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../../dist/css/glyphicons-ie7.css" media="screen">
+    <![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+<![endif]-->
+<style>
+.top-bar{
+  margin-top: 61px;
+}
+</style>
+  </head>
+  <body>
+  <a class="sr-only" href="#content">Skip navigation</a>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+              <a href="/" title="Go to the gov.uk homepage" class="content">
+              <img src="../../dist/img/home-office-logo.png" alt="Home office logo" class="logo" width="180" height="41" style="margin-bottom: 10px">
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="top-bar"></div>
+    </div>
+
+    <div class="container">
+         <div class="clearfix">&nbsp;</div>
+          <div class="row">
+            <div class="col-md-9 margin-20">
+     
+     <h1>Typeahead</h1>
+    
+
+         </div>
+        </div>
+          <div class="row">  
+            <div class="col-md-9">
+              <div id="error-box"></div>
+            </div>
+          </div>
+          
+          <div class="row">  
+            <div class="col-sm-12">
+
+              <form class="lo1form" id="lo1form" action="" method="post">
+
+                  <fieldset id="Personal_Details">
+                    <div class="row col-md-9">
+                      <legend><h2>Prefetches data, stores it in localStorage, and searches it on the client</h2></legend>
+                    </div>
+                </fieldset> 
+                 <div class="row col-sm-6">
+                        <div class="form-group" id="country_other">
+                      <label for="country_other">Country</label>                      
+                      <input type="text" class="form-control typeahead" id="country_other" placeholder="Start typing" name="country_other" spellcheck="false" data-describedby="country_other-description" data-description="country_other"  data-pattern="^[a-zA-Z]+(([\Õ\'\,\)\(\.\&\- ][a-zA-Z ])?[\Õ\'\,\)\(\.\&\- ][a-zA-Z]*)*$" maxlength="30" style="position:absolute">
+                      <span class="form-desc" id="country_other-description"></span>
+                    </div> 
+
+                 </div>       
+ 
+           </form> 
+
+          </div>
+        </div>
+      </div>
+
+<!-- footer -->
+<div class="top-bar-footer"></div>
+<div class="gov-footer">
+   <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="footer-menu">
+                  <ul>
+                     <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Feedback</a></li>
+                  </ul>
+          </div>
+          </div>
+        </div>
+         <div class="row">
+              <div class="col-sm-12">
+               <ul class="view-options">
+                  <li><a href="#" id="view-options"><span id="view-full">View full site</span></a></li>
+                </ul>
+              <hr />
+              </div>
+         </div>
+          <div class="row">
+                   <div class="col-sm-9">
+                      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated.</p>
+                      <p>© Office for Security and Counter Terrorism</p>
+                  </div>
+                    <div class="col-sm-3">
+                      <div class="copyright-div">
+                      <div class="copyright">
+                      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+                      </div>
+                    </div>
+                    </div>
+          </div>
+  </div>
+</div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../dist/js/bootstrap.js"></script>
+<script src="../../assets/js/custom.js"></script>
+<script src="../../assets/js/modernizr-2.5.2.min.js"></script>
+<script src="../../assets/js/toggle.viewport.js"></script>
+<script src="../../assets/js/jquery.placeholder.js"></script>
+<script src="../../assets/js/typeahead.min.js"></script>
+
+<script>
+$(function() {
+
+//typeahead
+  if ($('.typeahead').length > 0) {
+    $('.typeahead').typeahead({                                
+    name: 'countries',                                                          
+    //prefetch: 'countries.json',   
+    local: ["Afghanistan","Akrotiri","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas, The","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British A.T.","British I.O.T.","British Virgin Islands","Brunei","Bulgaria","Burkina","Burma","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central African Republic","Chad","Channel Islands","Chile","China","Colombia","Comoros","Congo","Congo (Democratic Rep.)","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Dhekelia","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Fiji","Finland","France","Gabon","Gambia, The","Georgia","Germany","Ghana","Gibraltar","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea (North)","Korea (South)","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya ","Liechtenstein","Lithuania","Luxembourg","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","Norway","Occ. Palestinian T.","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Pitcairn, Henderson & Is.","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Samoa","San Marino","Sao Tome & Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","S. Georgia & Sandwich Is.","Sovereign Base Areas","Spain","Sri Lanka","St Helena, Asc. & T.D.C.","St Kitts & Nevis ","St Lucia","St Vincent","Sudan","Surinam","Swaziland","Sweden","Switzerland","Syria","Tajikistan","Tanzania","Thailand","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos Islands","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Yugoslavia","Zambia","Zimbabwe"],                                      
+    limit: 10                                                                   
+  });
+  }
+});
+</script>
+
+<!-- <script src="http://platform.twitter.com/widgets.js"></script> -->
+<script src="../../assets/js/holder.js"></script>
+<script src="../../assets/js/application.js"></script>
+</html>
