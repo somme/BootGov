@@ -12,12 +12,12 @@ p {
   font-size: 1.9rem;
   line-height: 25px;
   line-height: 2.5rem;
-  font-weight: 100;
+  //font-weight: 100;
 }
 .lead {
   margin-bottom: $line-height-computed;
   font-size: ($font-size-base * 1.4);
-  font-weight: 100;
+  //font-weight: 100;
   line-height: 1.25;
 
   @media (min-width: $screen-tablet) {
@@ -112,7 +112,7 @@ h6, .h6 { font-size: $font-size-h6; }
       font-size: 36px;
       font-size: 3.6rem;
       font-style: normal;
-      font-weight: 100;
+      //font-weight: 100;
     }
     border-bottom: 5px solid #000;
     margin-bottom: 30px;

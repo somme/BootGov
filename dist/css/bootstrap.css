@@ -321,8 +321,6 @@ body {
   line-height: 1.42857;
   color: #121212;
   background-color: white;
-  src: url(https://assets.digital.cabinet-office.gov.uk/static/NTA-Light-20130221.eot#) format("embedded-opentype");
-  font-weight: normal;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -416,13 +414,11 @@ p {
   font-size: 1.9rem;
   line-height: 25px;
   line-height: 2.5rem;
-  font-weight: 100;
 }
 
 .lead {
   margin-bottom: 20px;
   font-size: 19.6px;
-  font-weight: 100;
   line-height: 1.25;
 }
 @media (min-width: 768px) {
@@ -552,7 +548,6 @@ h6, .h6 {
   font-size: 36px;
   font-size: 3.6rem;
   font-style: normal;
-  font-weight: 100;
 }
 
 ul,
@@ -1500,6 +1495,57 @@ pre code {
     margin-left: 91.66667%;
   }
 }
+.ie7 .col-xs-1,
+.ie7 .col-xs-2,
+.ie7 .col-xs-3,
+.ie7 .col-xs-4,
+.ie7 .col-xs-5,
+.ie7 .col-xs-6,
+.ie7 .col-xs-7,
+.ie7 .col-xs-8,
+.ie7 .col-xs-9,
+.ie7 .col-xs-10,
+.ie7 .col-xs-11,
+.ie7 .col-xs-12,
+.ie7 .col-sm-1,
+.ie7 .col-sm-2,
+.ie7 .col-sm-3,
+.ie7 .col-sm-4,
+.ie7 .col-sm-5,
+.ie7 .col-sm-6,
+.ie7 .col-sm-7,
+.ie7 .col-sm-8,
+.ie7 .col-sm-9,
+.ie7 .col-sm-10,
+.ie7 .col-sm-11,
+.ie7 .col-sm-12,
+.ie7 .col-md-1,
+.ie7 .col-md-2,
+.ie7 .col-md-3,
+.ie7 .col-md-4,
+.ie7 .col-md-5,
+.ie7 .col-md-6,
+.ie7 .col-md-7,
+.ie7 .col-md-8,
+.ie7 .col-md-9,
+.ie7 .col-md-10,
+.ie7 .col-md-11,
+.ie7 .col-md-12,
+.ie7 .col-lg-1,
+.ie7 .col-lg-2,
+.ie7 .col-lg-3,
+.ie7 .col-lg-4,
+.ie7 .col-lg-5,
+.ie7 .col-lg-6,
+.ie7 .col-lg-7,
+.ie7 .col-lg-8,
+.ie7 .col-lg-9,
+.ie7 .col-lg-10,
+.ie7 .col-lg-11,
+.ie7 .col-lg-12 {
+  position: inherit;
+}
+
 table {
   max-width: 100%;
   background-color: transparent;
@@ -1738,7 +1784,7 @@ legend h2 {
 label {
   display: inline-block;
   margin-bottom: 5px;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 19px;
   font-size: 1.9rem;
 }
@@ -1755,6 +1801,18 @@ input[type="checkbox"] {
   margin-top: 1px \9;
   /* IE8-9 */
   line-height: normal;
+}
+
+.ie7 .checkbox-inline input[type="checkbox"],
+.ie7 .radio-inline input[type="radio"] {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.ie8 .checkbox-inline input[type="checkbox"],
+.ie8 .radio-inline input[type="radio"] {
+  margin-top: 8px !important;
+  margin-right: 5px !important;
 }
 
 input[type="file"] {
@@ -1836,6 +1894,14 @@ select.form-control {
   margin-right: 10px;
 }
 
+.form-inline .form-group input, .navbar-form .form-group input {
+  margin-right: 4px;
+}
+
+.ie7 .form-inline .form-group input, .ie7 .navbar-form .form-group input {
+  margin-right: 0;
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -1881,7 +1947,6 @@ textarea.form-control {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-weight: 100;
   font-size: 19px;
   font-size: 1.9rem;
   list-style-type: circle;
@@ -1938,7 +2003,6 @@ textarea.form-control {
   padding-left: 20px;
   margin-bottom: 0;
   vertical-align: middle;
-  font-weight: 100;
   cursor: pointer;
 }
 
@@ -2136,6 +2200,14 @@ textarea.input-lg {
 .form-group ul.declaration-bullets {
   margin-top: -10px !important;
   margin-left: -24px;
+}
+
+.ie7 .form-group ul.declaration-bullets {
+  margin-left: -6px;
+}
+.ie7 .form-group ul.declaration-bullets li {
+  list-style: circle;
+  margin-left: 30px;
 }
 
 .declaration-bg {
@@ -2761,8 +2833,8 @@ html {
 .gov-footer p,
 .footer-menu,
 .view-options {
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -2954,11 +3026,11 @@ span#view-responsive {
 
 span.success {
   color: #2cc52c;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 19px;
+  font-size: 1.9rem;
   display: block;
   margin-top: -30px;
-  margin-right: -30px;
+  margin-right: -20px;
   padding-left: 10px;
   float: right;
 }
@@ -2972,10 +3044,9 @@ span.pattern,
 span.conditional {
   color: #df3034;
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   display: block;
   margin-top: 10px;
-  font-weight: 100;
 }
 
 span.required,
@@ -2996,6 +3067,10 @@ form .has-error {
   display: block;
 }
 
+.ie7 form .has-error {
+  padding-right: 30px;
+}
+
 form .select-group .has-error,
 form .input-group .has-error {
   background-color: none;
@@ -3008,7 +3083,7 @@ form .input-group .has-error {
 .form-group.select-group span.success,
 .form-group.radio-group span.success,
 .form-group.input-group span.success {
-  margin-top: 0px !important;
+  margin-top: -30px !important;
 }
 
 .error-box {
@@ -3021,11 +3096,14 @@ form .input-group .has-error {
 .error-box span.required {
   margin-top: -20px;
 }
+.error-box h2 {
+  font-size: 24px !important;
+  font-size: 2.4rem !important;
+}
 
 .msg ol {
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: 100;
   color: #df3034;
   margin: -10px 0 0 50px;
   padding: 0;
@@ -3121,6 +3199,10 @@ form .input-group .has-error {
   width: 100%;
 }
 
+.ie7 .tt-dropdown-menu {
+  z-index: 9999;
+}
+
 .tt-suggestion {
   display: block;
   padding: 3px 20px;
@@ -3178,6 +3260,113 @@ form .input-group .has-error {
   padding-top: 0;
 }
 
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.prettycheckbox,
+.prettyradio {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.prettycheckbox a,
+.prettyradio a {
+  width: 30px;
+  height: 30px;
+  background: url(../img/prettyCheckable-blue.png) top left no-repeat;
+  display: block;
+  float: left;
+  cursor: pointer;
+  margin: 0;
+}
+
+.prettycheckbox.green a,
+.prettyradio.green a {
+  background-image: url(prettyCheckable-green.png);
+}
+
+.prettycheckbox.red a,
+.prettyradio.red a {
+  background-image: url(prettyCheckable-red.png);
+}
+
+.prettycheckbox.yellow a,
+.prettyradio.yellow a {
+  background-image: url(prettyCheckable-yellow.png);
+}
+
+.prettycheckbox.gray a,
+.prettyradio.gray a {
+  background-image: url(prettyCheckable-gray.png);
+}
+
+.prettyradio a {
+  background-position: 0 -120px;
+}
+
+.prettycheckbox a:focus,
+.prettyradio a:focus {
+  outline: 0 none;
+}
+
+.prettycheckbox a:focus {
+  background-position: 0 -30px;
+}
+
+.prettyradio a:focus {
+  background-position: 0 -150px;
+}
+
+.prettycheckbox a.checked {
+  background-position: 0 -60px;
+}
+
+.prettyradio a.checked {
+  background-position: 0 -180px;
+}
+
+.prettycheckbox a.checked:focus {
+  background-position: 0 -90px;
+}
+
+.prettyradio a.checked:focus {
+  background-position: 0 -210px;
+}
+
+.prettycheckbox label,
+.prettyradio label {
+  display: block;
+  float: left;
+  margin: 6px 5px;
+  cursor: pointer;
+}
+
+.prettycheckbox.disabled a,
+.prettyradio.disabled a,
+.prettycheckbox.disabled label,
+.prettyradio.disabled label {
+  cursor: not-allowed;
+}
+
+.prettycheckbox.disabled a {
+  background-position: 0 -240px;
+}
+
+.prettyradio.disabled a {
+  background-position: 0 -270px;
+}
+
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -3219,7 +3408,7 @@ form .input-group .has-error {
   -webkit-font-smoothing: antialiased;
 }
 .glyphicon:empty {
-  width: 1em;
+  width: auto;
 }
 
 .glyphicon-asterisk:before {

@@ -29,6 +29,13 @@
           //position: relative !important;
           position: absolute !important;
           width: 100%;
+
+}
+
+.ie7 {
+  .tt-dropdown-menu {
+    z-index: 9999;
+  }
 }
 
 .tt-suggestion {
