@@ -84,6 +84,15 @@ footer .copyright {
 	.gov-footer{
 		margin-bottom: -20px;
 
+			a:visited,
+			div p a:visited,
+			li a{
+				color: #454a4c !important;
+			}
+			li a:hover,
+			div p a:hover{
+				color: $footer-hover-color;
+			}
 		.row{
 			.col-sm-3{
 				width:240px;
@@ -92,5 +101,12 @@ footer .copyright {
 	}
 	.footer-menu ul li{
 		float: left;
+	}
+	.copyright a,
+	div p a:visited{
+		color: #454a4c !important;
+	}
+	.copyright a:hover{
+		color: $footer-hover-color;
 	}
 }

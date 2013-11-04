@@ -2092,6 +2092,7 @@ textarea.input-lg {
 }
 .form-inline .form-group, .navbar-form .form-group {
   margin-bottom: 0;
+  display: inline-block;
 }
 
 .form-horizontal .control-label,
@@ -2594,6 +2595,9 @@ html {
   display: inline-block;
   margin: 16px 0 0 20px !important;
 }
+.ie7 .top-bar {
+  margin-top: 61px;
+}
 
 .hmpo {
   margin-bottom: 10px;
@@ -2837,11 +2841,27 @@ footer .copyright {
 .ie7 .gov-footer {
   margin-bottom: -20px;
 }
+.ie7 .gov-footer a:visited,
+.ie7 .gov-footer div p a:visited,
+.ie7 .gov-footer li a {
+  color: #454a4c !important;
+}
+.ie7 .gov-footer li a:hover,
+.ie7 .gov-footer div p a:hover {
+  color: black !important;
+}
 .ie7 .gov-footer .row .col-sm-3 {
   width: 240px;
 }
 .ie7 .footer-menu ul li {
   float: left;
+}
+.ie7 .copyright a,
+.ie7 div p a:visited {
+  color: #454a4c !important;
+}
+.ie7 .copyright a:hover {
+  color: black !important;
 }
 
 .ie7 #view-options,
