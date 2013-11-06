@@ -517,7 +517,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 h4, .h4 {
@@ -530,6 +530,10 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 12px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: underline;
 }
 
 .page-header {
@@ -2044,16 +2048,16 @@ textarea.input-sm {
 }
 
 .input-lg {
-  height: 45px;
-  padding: 10px 16px;
+  height: 37px;
+  padding: 6px 10px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 0;
 }
 
 select.input-lg {
-  height: 45px;
-  line-height: 45px;
+  height: 37px;
+  line-height: 37px;
 }
 
 textarea.input-lg {
@@ -2245,7 +2249,7 @@ fieldset#data_pretection {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 10px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2460,7 +2464,7 @@ fieldset#data_pretection {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 10px 16px;
+  padding: 6px 10px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
@@ -2627,11 +2631,15 @@ html {
 }
 
 .sitename a {
-  font-weight: 400;
+  font-weight: 800;
   font-size: 26px;
   font-size: 2.6rem;
   color: #fff !important;
   margin-left: 30px;
+  text-decoration: none;
+}
+.sitename a:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -2688,7 +2696,7 @@ html {
   color: #fff !important;
   padding: 0 !important;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 700;
 }
 
 .top-nav > li > a:hover {
@@ -4572,8 +4580,8 @@ form .input-group .has-error {
 .input-group-lg > .form-control .input-lg,
 .input-group-lg > .input-group-addon .input-lg,
 .input-group-lg > .input-group-btn > .btn .input-lg {
-  height: 45px;
-  padding: 10px 16px;
+  height: 37px;
+  padding: 6px 10px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 0;
@@ -4581,8 +4589,8 @@ form .input-group .has-error {
 .input-group-lg > .form-control select.input-lg,
 .input-group-lg > .input-group-addon select.input-lg,
 .input-group-lg > .input-group-btn > .btn select.input-lg {
-  height: 45px;
-  line-height: 45px;
+  height: 37px;
+  line-height: 37px;
 }
 .input-group-lg > .form-control textarea.input-lg,
 .input-group-lg > .input-group-addon textarea.input-lg,
@@ -4638,7 +4646,7 @@ form .input-group .has-error {
 }
 
 .input-group-addon {
-  padding: 6px 12px;
+  padding: 6px 10px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
@@ -4653,7 +4661,7 @@ form .input-group .has-error {
   border-radius: 0;
 }
 .input-group-addon.input-lg {
-  padding: 10px 16px;
+  padding: 6px 10px;
   font-size: 18px;
   border-radius: 0;
 }
@@ -5363,7 +5371,7 @@ form .input-group .has-error {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
+  padding: 6px 10px;
   line-height: 1.42857;
   text-decoration: none;
   background-color: white;
@@ -5410,7 +5418,7 @@ form .input-group .has-error {
 
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 10px 16px;
+  padding: 6px 10px;
   font-size: 18px;
 }
 .pagination-lg > li:first-child > a,

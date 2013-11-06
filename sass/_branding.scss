@@ -21,11 +21,16 @@ html{
 }
 
 .sitename a{
-	font-weight: 400;
+	font-weight: 800;
 	font-size: 26px;
 	font-size: 2.6rem;
 	color: #fff !important;
 	margin-left: 30px;
+	text-decoration: none;
+
+	&:hover{
+	text-decoration: underline;
+	}
 }
 .logo{
 	margin-top: 10px;
