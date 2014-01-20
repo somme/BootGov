@@ -1,0 +1,53 @@
+//
+// Phases - Alpha -> Beta -> Live
+// --------------------------------------------------
+
+.meta-phases {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	//float: right;
+}
+.meta-phases li a{
+	color: #fff;
+	text-decoration: none;
+}
+.meta-phases li {
+	padding: 5px 10px;
+	float: left;
+	margin: 0 5px 0 0;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.42857;
+	font-weight: 400;
+	text-transform: none;
+	background: #006435;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	display: none;
+}
+
+.meta-phases li.alpha {
+	background-color: #d53880;
+}
+.meta-phases li.beta {
+	background-color: #f47738;
+}
+.meta-phases li.live {
+	background-color: #85994b;
+}
+.current-phase{
+	display: inline-block !important;
+}
+.group::before, .group::after {
+	content: " 0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.group::after {
+	clear: both;
+}

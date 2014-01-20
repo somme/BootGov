@@ -1,0 +1,146 @@
+//
+// Top navigation
+// --------------------------------------------------
+
+.top-nav{
+	display: inline-block;
+	position: relative;
+	//margin-left: 30px !important;
+	margin-top: 0px !important;
+}
+/*.top-nav > li{
+	margin-right: 20px;
+}*/
+.top-nav > li > a {
+	color: #fff !important;	
+	padding: 0 !important;
+	font-size: 16px;
+	font-weight: 700;		
+}
+.top-nav > li > a:hover {
+	text-decoration: underline !important;
+}
+.top-nav > li > a.active{
+	color: lighten($brand-primary, 14%) !important;
+}
+.navbar .menu-btn {
+		display: block;
+		font-weight: 100;
+}
+
+.menu-btn .glyphicon{
+	margin-left: 4px;
+}
+@media (min-width: $screen-sm){
+	#navbar-main{
+		margin-left: 30px;
+	}
+.navbar .menu-btn {
+		display: none;
+	}
+		.top-nav > li{
+		margin-right: 20px !important;
+	}
+	.top-nav{
+		margin-top: 4px !important;
+	}
+	.navbar-collapse{
+		padding-left: 0 !important;
+	}
+	nav.navbar-collapse.collapse{
+		display:inline-block !important;
+	}
+	nav.navbar-collapse .navbar-nav li {
+		border: none;
+
+	}
+
+}
+// Nav menu collapsed
+@media (max-width: $screen-sm){
+
+
+	a.menu-btn{
+		float: right;
+		text-decoration: none;
+		padding: 10px 15px 10px;
+		cursor: pointer;
+		color: #fff;
+	}
+	.navbar-collapse{
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+		overflow-x: hidden !important;
+		overflow-y: hidden !important;
+	}
+	.navbar-collapse .navbar-nav{
+		margin-left: 0px !important;
+	}
+	.top-nav{
+		width: 100%;
+	} 
+	.navbar-nav{
+		padding-right: 10px;
+	}
+	.navbar-collapse .navbar-nav li{
+		//margin: 5px 0 0 0;
+		padding: 0;
+		border-bottom: 1px solid #222323;
+	}
+}
+
+@media (max-width: $screen-md-max){
+	.navbar-fixed-top{
+	position: relative !important;
+	}
+	.top-bar{
+		margin-top: 0;
+	} 
+	.navbar {
+		margin-bottom: 0 !important;
+	}
+
+		.navbar-collapse .navbar-nav li a{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+}
+
+@media (max-width: $screen-xs-max){
+	.navbar-collapse .navbar-nav li{
+		margin: 5px 0 0 0;
+	}
+	.navbar-collapse .navbar-nav li a{
+		font-size: 14px;
+		font-size: 1.4rem;
+		font-weight: 100;
+	}	
+}
+
+.ie8{
+	.navbar-collapse{
+		display: block;
+	}
+	.navbar-nav {
+		float: left;
+		margin: 10px 0 0 50px !important;
+	}
+	.navbar-nav > li {
+		float: left;
+		margin-right: 20px;
+	}
+}
+.ie7{
+	.navbar-collapse{
+		display: block;
+	}
+	.navbar-nav {
+		float: left;
+		margin: 16px 0 0 30px !important;
+	}
+	.navbar-nav > li {
+		float: left;
+		margin-right: 20px;
+	}
+}

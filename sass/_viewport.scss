@@ -1,0 +1,32 @@
+//
+// Toggle viewport
+// --------------------------------------------------
+
+.ie7 #view-options,
+.ie8 #view-options{
+	display: none
+}
+.view-options{
+	margin-bottom: 10px !important
+}	
+span#view-responsive{
+	display: none
+}	
+@media screen and (min-width: 800px){
+	span#view-full{
+		display: none
+    }
+}    
+	span#view-responsive{
+		display: inline
+}
+@media (min-width: 1200px) {
+	#view-options{
+		display: none
+		}
+}
+@media (max-width: 979px){
+	#view-options span{
+		margin-top: -40px
+		}
+}

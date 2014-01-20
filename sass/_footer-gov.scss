@@ -1,0 +1,112 @@
+//
+// Footer
+// ---------------------------------------------------
+
+.gov-footer{
+	background-color: #dee0e2 !important;
+	border-top: 1px solid #a1acb2;
+	color: $footer-link-color;
+}
+.gov-footer p,
+.footer-menu,
+.view-options {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-weight: 300;
+}
+.footer-menu,
+.view-options{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.footer-menu ul{
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+.footer-menu ul li{
+	display: inline-block;
+	margin-right: 1.2em;
+}
+.gov-footer a{
+	text-decoration: underline;
+	color: $footer-link-color;
+}
+.gov-footer a:hover{
+	color: $footer-hover-color;
+}
+.gov-footer a:visited {
+	color: $footer-link-color;
+}
+.gov-footer hr{
+	border-color: #a1acb2;
+}
+
+footer .copyright {
+  display: inline-block;
+  float: none;
+  text-align: inherit;
+  min-height: 150px;
+  min-height: 15rem;
+}
+.copyright-div{
+  text-align: center;
+}
+.gov-footer .copyright a {
+  display: block;
+  padding: 115px 0 0 0;
+  padding: 11.5rem 0 0 0;
+  background: transparent url(../img/govuk-crest.png) no-repeat 50% 0;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+	.gov-footer .copyright a {
+    background-image: url(../img/govuk-crest-2x.png);
+    background-size: 125px 102px;
+  }
+}
+.ie9{
+	.gov-footer{
+	margin-bottom: -20px;
+	}
+}
+.ie8{
+	.gov-footer{
+	margin-bottom: -20px;
+	}
+}
+.ie7{
+	.gov-footer{
+		margin-bottom: -20px;
+
+			a:visited,
+			div p a:visited,
+			li a{
+				color: #454a4c !important;
+			}
+			li a:hover,
+			div p a:hover{
+				color: $footer-hover-color;
+			}
+		.row{
+			.col-sm-3{
+				width:240px;
+			}
+		}
+	}
+	.footer-menu ul li{
+		float: left;
+	}
+	.copyright a,
+	div p a:visited{
+		color: #454a4c !important;
+	}
+	.copyright a:hover{
+		color: $footer-hover-color;
+	}
+}

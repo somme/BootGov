@@ -1,0 +1,121 @@
+//
+// Navbar search
+// --------------------------------------------------
+
+.btn-search {
+	background-color: $brand-primary;
+	border: 0;
+	height: 2.45em;
+	width: 3.2em;
+	margin: 10px 0 6px 1px;
+}
+.top-search{
+	width: 300px;
+	position: relative;
+}
+
+.top-search input,
+.top-search-collapse input{
+	margin:10px 0 0 0;
+	border: none;
+}
+.top-search .glyphicon,
+.top-search-collapse .glyphicon{
+	color: #fff;
+	font-size: 20px;
+	font-size: 2rem;
+}
+.btn-search:hover {	
+	background-color: darken($brand-primary, 5%);
+}
+
+@media (max-width: $screen-xs){
+	.top-search{
+		display: none !important;
+	}
+}
+@media (max-width: $screen-xs-max){
+.top-search{
+		display: none !important;
+	}	
+
+}
+@media (max-width: $screen-md){
+	.top-search{
+			width: 190px;
+	}
+	.top-search .form-control{
+	font-size: 16px ;
+	font-size: 1.6rem ;
+
+}
+}
+@media (min-width: $screen-sm){
+	.top-search-collapse{
+		display: none !important;
+	}
+}
+
+.top-search-collapse .form-control{
+	font-size: 16px ;
+	font-size: 1.6rem ;
+
+}
+// IE9 hacks
+.ie9 {
+	.top-search{
+	margin-top: 10px;
+}
+	.top-search .btn-search{
+	margin-top: 0;
+}
+	.top-search-collapse .btn-search{
+	margin-top: 0;
+}
+	.top-search-collapse {
+	margin-top: 4px;
+	}	
+}
+// IE8 hacks
+.ie8{
+	.top-search-collapse,
+	.menu-btn{
+		display: none !important;
+	}
+	.navbar-header{
+		display: inline-block;
+		margin-left: 0 !important;
+		float: left;
+	}
+	.top-search .form-control{
+		display: inline-block;
+		padding: 2px 0 0 6px !important;
+	}
+}
+// IE7 hacks
+.ie7{
+	.top-search-collapse,
+	.menu-btn{
+		display: none !important;
+	}
+	.navbar-header{
+		display: inline-block;
+		margin-left: 0 !important;
+		float: left;
+	}
+	.top-search{
+		margin-bottom: 10px;
+	}
+	.top-search .form-control{
+		display: inline-block;
+		padding: 2px 0 0 6px !important;
+			float:left !important;
+			width: 240px;
+	}
+	.btn-search{
+		display: inline-block !important;
+		float:left !important;
+		height: 36px;
+	}
+
+}

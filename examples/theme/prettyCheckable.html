@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="ie7 no-js"><![endif]-->
+<!--[if IE 8]> <html class="ie8 no-js"><![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"><![endif]-->
+<html lang="en">
+  <head>
+    <title>BootGov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../dist/css/bootstrap.css" media="screen">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../../dist/css/glyphicons-ie7.css" media="screen">
+    <![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+<![endif]-->
+
+    <!--[if IE 8]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-beb10cbc00c9b7dcdbdee824962bc5f6.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+<style>
+.top-bar{
+  margin-top: 0px !important;
+}
+@media (min-width: 1200px){
+  .top-bar{
+    margin-top: 61px !important;
+  }
+}
+.ie8 .top-bar,
+.ie7 .top-bar{
+   margin-top: 61px !important;
+}
+</style>
+  </head>
+  <body>
+  <a class="sr-only" href="#content">Skip navigation</a>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+              <a href="/" title="Go to the gov.uk homepage" class="content">
+              <img src="../../dist/img/home-office-logo.png" alt="Home office logo" class="logo" width="180" height="41" style="margin-bottom: 10px">
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="top-bar"></div>
+    </div>
+
+    <div class="container">
+         <div class="clearfix">&nbsp;</div>
+          <div class="row">
+            <div class="col-md-9 margin-20">
+     
+     <h1>jQuery prettyCheckable</h1>
+       <div class="form-group">
+    <p>Custom checkboxes and radio buttons</p>
+</div>
+         </div>
+        </div>
+          <div class="row">  
+            <div class="col-md-9">
+              <div id="error-box"></div>
+            </div>
+          </div>
+          
+          <div class="row">  
+            <div class="col-sm-12">
+
+              <form class="lo1form" id="lo1form" action="" method="post">
+
+                            <fieldset>
+              
+                 <div class="row col-md-9" id="data_pretection">
+                  
+
+            <div class="form-group">
+              <input type="checkbox" class="prettyCheckable" value="1" id="Test1" name="Test1" data-label="Right positioned label (no param)" />
+            </div>
+
+
+            <div class="form-group">
+              <input type="checkbox" class="prettyCheckable" value="3" id="TestDisabled" name="TestDisabled" disabled data-label='Existing "disabled" attribute'>
+            </div>    
+
+
+            <div class="form-group">
+              <label>Enable the checkbox above?</label>
+              <div class="radio-group">
+              <input type="radio" class="prettyCheckable" value="yes" name="disabledTrigger" data-label="Yes, please." data-customclass="margin-right"/>
+              <input type="radio" class="prettyCheckable" value="no" name="disabledTrigger" data-label="Meh." checked/>
+            </div>
+                  </div>
+
+            <div class="form-group">
+              <input type="checkbox" class="prettyCheckable" value="2" id="Test2" name="Test2" data-label='data-labelPosition="left"' data-labelPosition="left" />
+            </div>
+
+            <div class="form-group">
+              <label>Radios!</label>
+            <div class="radio-group">
+              <input type="radio" class="prettyCheckable" value="1" id="Test3_0" name="Test3" data-label="Yes" checked data-customclass="margin-right"/>
+              <input type="radio" class="prettyCheckable" value="2" id="Test3_1" name="Test3" data-label="No" />
+            </div>
+            </div>
+
+            <div class="form-group">
+              <label>Would you like to see other colors?</label>
+            <div class="radio-group">
+              <input type="radio" class="prettyCheckable" value="yes" name="colors" data-label="Yes" data-customclass="margin-right"/>
+              <input type="radio" class="prettyCheckable" value="no" name="colors" data-label="No" checked/>
+            </div>
+                </div>
+
+            <div id="other-colors" style="display: none">
+
+                
+      
+                  <input type="checkbox" class="prettyCheckable" value="1" id="color1" checked name="color1" data-label="Default (no-param)" />
+   
+<br />
+ 
+                  <input type="checkbox" class="prettyCheckable" value="1" id="color2" checked name="color2" data-label='data-color="green"' data-color="green" />
+
+<br />
+ 
+                  <input type="checkbox" class="prettyCheckable" value="1" id="color3" checked name="color3" data-label='data-color="red"' data-color="red" />
+
+<br />
+   
+                  <input type="checkbox" class="prettyCheckable" value="1" id="color4" checked name="color4" data-label='data-color="yellow"' data-color="yellow" />
+
+
+         
+            
+             </fieldset>
+       
+ 
+           </form> 
+
+          </div>
+        </div>
+      </div>
+
+<!-- footer -->
+<div class="top-bar-footer"></div>
+<div class="gov-footer">
+   <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="footer-menu">
+                  <ul>
+                     <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Feedback</a></li>
+                  </ul>
+          </div>
+          </div>
+        </div>
+         <div class="row">
+              <div class="col-sm-12">
+               <ul class="view-options">
+                  <li><a href="#" id="view-options"><span id="view-full">View full site</span></a></li>
+                </ul>
+              <hr />
+              </div>
+         </div>
+          <div class="row">
+                   <div class="col-sm-9">
+                      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated.</p>
+                      <p>© Office for Security and Counter Terrorism</p>
+                  </div>
+                    <div class="col-sm-3">
+                      <div class="copyright-div">
+                      <div class="copyright">
+                      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+                      </div>
+                    </div>
+                    </div>
+          </div>
+  </div>
+</div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../dist/js/bootstrap.js"></script>
+<script src="../../assets/js/custom.js"></script>
+<script src="../../assets/js/modernizr-2.5.2.min.js"></script>
+<script src="../../assets/js/toggle.viewport.js"></script>
+<script src="../../assets/js/jquery.placeholder.js"></script>
+<script src="../../assets/js/prettyCheckable.js"></script>
+
+<script src="http://arthurgouveia.com/prettyCheckable/tests/checkable.js"></script>
+
+
+<script>
+$(function() {
+
+
+var inputs = $('input.prettyCheckable:not(#TestDisabled)').prettyCheckable({
+    labelPosition: 'right'
+  });
+
+  var specificInput = $('#TestDisabled').prettyCheckable();
+
+  $('input[name=colors]').on('change', function(){
+
+    if ($(this).val() === 'yes') {
+
+      $('div#other-colors').slideDown(200);
+
+    } else {
+
+      $('div#other-colors').slideUp(200);
+
+    }
+
+  });
+
+  $('input[name=disabledTrigger]').on('change', function(){
+
+    if ($(this).val() === 'yes') {
+
+      specificInput[0].enableInput();
+
+    } else {
+
+      specificInput[0].disableInput();
+
+    }
+
+  });
+
+
+});
+</script>
+
+<!-- <script src="http://platform.twitter.com/widgets.js"></script> -->
+<script src="../../assets/js/holder.js"></script>
+<script src="../../assets/js/application.js"></script>
+</html>

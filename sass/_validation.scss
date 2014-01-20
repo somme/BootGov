@@ -1,0 +1,117 @@
+//
+// Validation
+// --------------------------------------------------
+
+.form-desc{
+	//float: right;
+}
+span.success {
+	color: $brand-success;
+	font-size: 19px;
+	font-size: 1.9rem;
+	display: block;
+	margin-top: -30px;
+	margin-right: -20px;
+	padding-left: 10px;
+	float: right;
+}
+.ie7{
+	.form-inline{
+		span.success{
+		margin-top: 30px;
+		}
+	}
+}
+span.required,
+span.pattern,
+span.conditional  {
+	color: $brand-warning;
+	font-size: 16px;
+	font-size: 1.9rem;
+	display: block;
+	margin-top: 10px;
+}
+span.required,
+span.pattern{
+margin-right: -90px;
+}
+span.conditional  {
+margin-right: -114px;
+}	
+
+.radio-group,
+.checkbox-group,
+.select-group {
+	span.required,
+	span.success,
+	span.pattern,
+	span.conditional {
+	//margin-top: 0;
+	}
+}
+#declaration {
+	span.required,
+	span.success,
+	span.pattern,
+	span.conditional {
+	//margin-top: 0px;
+	}
+}
+
+form .has-error{
+	background-color: $state-danger-bg;
+	padding: 10px 15px 10px 12px;
+	border-left: solid 3px $brand-danger;
+	margin-left: -15px;
+	margin-right: -15px;
+	display: block;
+}	
+.ie7 {
+	form .has-error{
+	padding-right: 30px;
+
+}
+
+}
+form .select-group .has-error,
+form .input-group .has-error{
+	background-color: none;
+	padding: 0;
+	border-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+}	
+.form-group.select-group span.success,
+.form-group.radio-group span.success,
+.form-group.input-group span.success{
+	margin-top: -30px !important;
+}
+.error-box{
+	border: 3px solid $brand-danger;
+	box-sizing: border-box;
+	padding: 0px 15px 10px 12px;
+	margin: 10px -15px 30px -15px;
+	background-color: $state-danger-bg;
+
+	span.required{
+		margin-top: -20px;
+	}
+	h2{
+		font-size: 24px !important;
+		font-size: 2.4rem !important;
+	}
+}
+.msg ol{
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: $brand-danger;
+	margin: -10px 0 0 50px;
+	padding: 0;
+}
+.msg ol li a{
+	color: $brand-danger;
+}
+.has-error#declaration .declaration-bg,
+.has-error#data_pretection .declaration-bg{
+	 background: none;
+}
