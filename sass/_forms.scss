@@ -60,6 +60,11 @@ input[type="checkbox"] {
     margin-top: 5px;
     margin-right: 5px;
   }
+
+  legend h2{
+    margin-left: -8px;
+  }
+
 }
 .ie8 {
   .checkbox-inline input[type="checkbox"],
@@ -120,7 +125,16 @@ output {
 .form-control {
   @include placeholder;
 }
-
+.ie7{
+  .form-control{
+    width: 99%;
+  }
+}
+.ie9 .placeholder,
+.ie8 .placeholder,
+.ie7 .placeholder{
+  color: #aaaaaa;
+}
 
 // Common form controls
 //
@@ -178,11 +192,12 @@ margin-right: 4px;
   display: block;
   width: 100%;
   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  //padding: $padding-base-vertical $padding-base-horizontal;
-    padding: 8px 6px 6px 6px;
+  padding: $padding-base-vertical $padding-base-horizontal;
+padding: 0 6px 0 6px;
+   //padding: 8px 6px 6px 6px;
   font-size: ($font-size-base*1.35714286);
   font-weight: 100;
-  line-height: $line-height-base;
+  //line-height: $line-height-base;
   color: $input-color;
   vertical-align: middle;
   background-color: $input-bg;
@@ -209,6 +224,17 @@ margin-right: 4px;
   }
  
 }
+.ie8{
+  .form-control{
+   padding: 4px 6px 6px 6px !important;
+  }
+}
+.ie7{
+  .form-control{
+      padding: 4px 6px 6px 6px;
+  }
+}
+
 
 // Reset height for `textarea`s
 textarea.form-control {
@@ -234,20 +260,41 @@ textarea.form-control {
         margin-bottom: 20px;
         font-size: 19px;
         font-size: 1.9rem;
-        list-style-type:circle;
+        //list-style-type:circle;
       }
       .form-group.radio-group{
         display: block;
       }
 
 }
+
+.ie7 .form-group{
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.ie7 .ie-form-group{
+  padding-bottom: -10px !important;
+}
+
 .form-group.radio-group label{
         display: block ;
       }
 
 .form-group.radio-group label.radio-inline{
   display: inline-block !important;
+  margin-right: 3em;
 }
+
+@media (max-width: $screen-xs-min){
+.form-group.radio-group label.radio-inline{
+  display: block !important;
+  margin-right: 0;
+}
+}
+
+
+
 .form-group.last{
     margin-bottom: 10px;
 }
@@ -295,7 +342,7 @@ textarea.form-control {
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
-  margin-left: 10px; // space out consecutive inline controls
+  //margin-left: 10px; // space out consecutive inline controls
 }
 
 // Apply same disabled cursor tweak as for inputs
@@ -446,7 +493,19 @@ input[type="checkbox"],
   .small{
     width: 160px;
   }
+  .medium{
+    width: 360px;
   }
+}
+
+.ie7 {
+    .small{
+    width: 150px;
+  }
+    .medium{
+    width: 360px;
+  }
+}
 
 .required-star{
   display: inline-block;
@@ -454,14 +513,14 @@ input[type="checkbox"],
 }
 .form-group ul.declaration-bullets {
   margin-top: -10px !important;
-  margin-left: -24px;
+  margin-left: -20px;
 }
 .ie7 {
   .form-group ul.declaration-bullets {
   margin-left: -6px;
   }
   .form-group ul.declaration-bullets li{
-    list-style: circle;
+    //list-style: circle;
     margin-left: 30px;
   }
 }
