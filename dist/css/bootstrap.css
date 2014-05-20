@@ -9,6 +9,33 @@
  * 
  * Sass -ified by Aaron Lademann @alademann
  */
+/*! Copyright (c) 2011 by Margaret Calvert & Henrik Kubel. All rights reserved. The font has been customised for exclusive use on gov.uk. This cut is not commercially available. */
+@font-face {
+  font-family: 'nta';
+  src: url("../fonts/NTA-Light-20130221.eot?#iefix") format("embedded-opentype"), url("../fonts/NTA-Light-20130221.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nta';
+  src: url("../fonts/NTA-Bold-20130221.eot?#iefix") format("embedded-opentype"), url("../fonts/NTA-Bold-20130221.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ntatabularnumbers';
+  src: url("../fonts/NTATabularNumbers-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NTATabularNumbers-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ntatabularnumbers';
+  src: url("../fonts/NTATabularNumbers-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NTATabularNumbers-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 article,
 aside,
