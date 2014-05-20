@@ -3,7 +3,7 @@
 // ---------------------------------------------------
 
 .gov-footer{
-	background-color: #dee0e2 !important;
+	background-color: $grey-3 !important;
 	border-top: 1px solid #a1acb2;
 	color: $footer-link-color;
 }
@@ -87,7 +87,7 @@ footer .copyright {
 			a:visited,
 			div p a:visited,
 			li a{
-				color: #454a4c !important;
+				color: $footer-link-color !important;
 			}
 			li a:hover,
 			div p a:hover{
@@ -104,7 +104,7 @@ footer .copyright {
 	}
 	.copyright a,
 	div p a:visited{
-		color: #454a4c !important;
+		color: $footer-link-color !important;
 	}
 	.copyright a:hover{
 		color: $footer-hover-color;

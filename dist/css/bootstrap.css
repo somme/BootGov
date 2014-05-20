@@ -362,7 +362,7 @@ textarea {
 }
 
 a {
-  color: #2e3191;
+  color: #005ea5;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -2511,7 +2511,7 @@ fieldset#data_pretection {
 }
 
 .btn-link {
-  color: #2e3191;
+  color: #005ea5;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -4829,7 +4829,7 @@ form .input-group .has-error {
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #2e3191;
+  border-color: #005ea5;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4956,8 +4956,8 @@ form .input-group .has-error {
 }
 
 .nav .caret {
-  border-top-color: #2e3191;
-  border-bottom-color: #2e3191;
+  border-top-color: #005ea5;
+  border-bottom-color: #005ea5;
 }
 
 .nav a:hover .caret {
@@ -5670,7 +5670,7 @@ a.badge:hover, a.badge:focus {
 
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #2e3191;
+  color: #005ea5;
   background-color: white;
 }
 
@@ -5723,7 +5723,7 @@ a.list-group-item.active > .badge,
 
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #2e3191;
+  border-color: #005ea5;
 }
 
 .thumbnail > img {
