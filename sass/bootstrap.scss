@@ -16,6 +16,9 @@
 // Import fonts
 @import "alphagov/font-face";
 
+// Import govuk_toolkit parts
+@import "../govuk_toolkit/stylesheets/colours";
+
 // Core variables and mixins
 @import "variables";
 @import "mixins";

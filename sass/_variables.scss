@@ -20,13 +20,13 @@ $almost-white:           #f7f7f7 !default;
 // -------------------------
 
 //$brand-primary:         #005ea5 !default;
-$brand-primary:			#9325b2 !default; //HO PURPLE	
-$brand-secondary:       #dee0e2 !default;
+$brand-primary:			$home-office !default; //HO PURPLE	
+$brand-secondary:       $grey-3 !default;
 $brand-success:         #2cc52c !default;
-$brand-warning:         #df3034 !default;
-$brand-danger:          #df3034 !default;
+$brand-warning:         $mellow-red !default;
+$brand-danger:          $mellow-red !default;
 $brand-info:            #5bc0de !default;
-$ho-button:				#006435 !default;
+$ho-button:				$green !default;
 
 // Scaffolding
 // -------------------------
@@ -37,8 +37,8 @@ $text-color:            $gray-dark !default;
 // Links
 // -------------------------
 
-$link-color:            #2e3191 !default;
-$link-hover-color:      #2e8aca !default;
+$link-color:            $link-colour !default;
+$link-hover-color:      $link-hover-colour !default;
 
 // Footer Links
 // -------------------------
@@ -49,7 +49,6 @@ $footer-hover-color:	darken($footer-link-color, 30%) !important;
 // Typography
 // -------------------------
 
-$nta-source:			  url(https://assets.digital.cabinet-office.gov.uk/static/NTA-Light-20130221.eot#) format("embedded-opentype");
 $font-family-nta:		  "nta", Arial, sans-serif !default;
 $font-family-sans-serif:  "Helvetica Neue", Helvetica-, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman-", Times, serif !default;
